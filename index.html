@@ -241,17 +241,30 @@
          and the name here must match the file name exactly. -->
   <figure class="full" style="text-align:center;">
   <img src="mnodel.png" alt="Digital twin model of the intersection"
-       style="max-width:70%; display:inline-block;" />
+       style="max-width:50%; display:inline-block;" />
 </figure>
 
     <!-- ============ OVERVIEW ============ -->
     <section class="block">
       <h2>Overview</h2>
-      <p>
+    
+
+<p>
+In the high-stakes theater of modern civil engineering, cities have long been bound by a frustrating paradox: we are forced to build our future through the rearview mirror of trial and error. In the summer of 2026, traveling to Florida Atlantic University to join the R1 research program at I-SENSE under the mentorship of Dr. JinWoo Jang, my objective was to interrogate a compelling antidote to this archaic paradigm—the digital twin.
+
+Focusing our lens upon the heavily contested artery of Glades Road and Airport Road in Boca Raton, the mandate was unequivocal: construct a high-fidelity virtual surrogate of a physical intersection to forecast infrastructure friction before a single yard of asphalt is ever laid.
+
+To understand the architecture of a digital twin is to recognize it as something far more profound than a mere algorithmic animation. It is, in its truest essence, a digital organism. It captures the frantic, breathing pulse of human transit—the microscopic friction of lane changes, the compounding cascade of signal delays, and the rhythmic ebb and flow of daily commerce. By ingesting empirical telemetry from the Florida Department of Transportation and fusing it with granular simulation environments, we bridge the chasm between the physical expanse and the abstract realm of computation.
+
+This is the quiet revolution of predictive urbanism. For too long, civil infrastructure has been reactive, healing congestion only after commuters have already paid the toll of wasted hours and exhausted fuel. Through this research, translating raw XML data arrays into mathematically validated simulations via rigorous calibration metrics like the GEH statistic, I witnessed firsthand how code can grant us foresight. We are no longer merely building roads; we are authoring the fluid dynamics of human movement, ensuring that the cities of tomorrow are engineered not just with concrete, but with absolute precision and grace.
 
 
-        In the summer of 2026, I flew to Florida Atlantic University and joined I-SENSE, an R1 research program, to study digital twins for smart urban traffic systems. Little did I know it would become one of the most rewarding experiences of my life. Under the mentorship of Dr. JinWoo Jang, the purpose of this research was to experiment with and learn how digital twins can predict the impact of future infrastructure changes before they are implemented in the real world. I chose the Glades Road and Airport Road intersection in Boca Raton, next to the FAU campus, as the case study for building my first digital twin
-        </p>
+</p>
+
+
+
+
+
     </section>
 
     <!-- full-width supporting image -->
@@ -263,10 +276,45 @@
     <!-- ============ CHALLENGE ============ -->
     <section class="block">
       <h2>Why Digital twins are important</h2>
-      <p>Every year, the Federal Highway Administration channels billions of dollars through the Infrastructure Investment and Jobs Act into critical infrastructure—roads, bridges, and safety enhancements designed to mitigate congestion. Yet, the gridlock persists. In major hubs like New York, Chicago, and Miami, drivers lose an average of 49 hours every single year to traffic, translating to over $40 billion burned in lost productivity.
-        The fundamental flaw isn't a lack of capital; it's a deficit of visibility. Billions in infrastructure decisions are routinely made using stale, months-old historical data and low-fidelity annual reports gathered from flat, traditional roadside cameras.
-        If we want to ensure public funds are spent wisely, we have to transition from reactive observation to predictive architecture. By fusing real-time dynamic traffic streams with static infrastructure data to build high-fidelity digital twins, we can accurately model the friction of our cities testing the exact impact of infrastructure changes before a single dollar of concrete is poured.</p>
-      <p>In this case study, we explore how digital twins can be leveraged to predict the impact of future infrastructure changes before implementing them in the real world. We focus on a specific intersection in Boca Raton, Florida, and demonstrate how our approach can lead to more informed decision-making and better outcomes for urban traffic systems.</p>
+
+
+
+
+
+      <p>
+
+Every year, the Federal Highway Administration (FHWA) channels an extraordinary volume of capital into the national transit grid, functioning as the financial backbone for American mobility. According to official federal spending figures from the Office of Management and Budget, the FHWA commanded a net total of $65 billion in fiscal year 2025 alone. This figure accounts for approximately 51 percent of the entire Department of Transportation budget, positioning the agency first among all DOT subdivisions in net expenditures. Rather than absorbing these billions into internal federal operations, over 99 percent of this capital is transferred directly to state and local governments as indirect federal spending, specifically earmarked to construct, maintain, and preserve the nation's sprawling network of highways, bridges, and tunnels.
+
+Despite these monumental and historic capital infusions, systemic gridlock persists across the country with stubborn resilience. In primary economic hubs and metropolitan engines such as New York, Chicago, and Miami, everyday motorists forfeit an average of forty-nine hours annually sitting idly in standstill traffic. When aggregated across millions of commuters, this chronic congestion yields an economic forfeiture exceeding forty billion dollars in demonstrable, unrecoverable lost productivity, alongside severe environmental tolls driven by excessive fuel consumption and carbon emissions. Billions of dollars flow from federal coffers into state projects every fiscal cycle, yet the underlying paralysis on our roadways remains largely unmitigated.
+
+The fundamental flaw driving this recurring crisis is rarely an absolute insufficiency of capital; rather, it is a profound evidentiary deficit during the planning and preliminary design phases. For decades, staggering budgetary allocations have been routinely predicated upon stale historical records, lagging macroeconomic indicators, and low-resolution annual surveys derived from passive, two-dimensional vantage points like traditional roadside cameras. These legacy methods fail entirely to capture the kinetic, ever-changing reality of modern vehicular flow. Planners and municipal engineers are frequently forced to make multi-million-dollar decisions using retroactive data that mirrors yesterday's traffic patterns rather than tomorrow's demands, resulting in infrastructure interventions that often manage congestion only after commuters have already paid the toll.
+
+Proper stewardship of public funds demands an immediate, decisive departure from post-hoc observation in favor of predictive architecture. By synthesizing real-time operational telemetry with baseline spatial and structural data to construct high-fidelity digital twins, civil engineers are empowered to simulate complex vehicular friction and test the exact operational impact of proposed structural alterations prior to the irrevocable commitment of capital and the pouring of concrete. In this case study, we examine how deploying digital twins on a critical intersection in Boca Raton, Florida, bridges the gap between raw map data and actionable simulation—replacing administrative guesswork with mathematical certainty and forging a more intelligent, fiscally accountable trajectory for urban transit networks.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </p>
+
+
+
     </section>
 
    
@@ -284,13 +332,13 @@
 
       <p>
 
-        To build our digital twin, the first step starts right inside the SUMO ecosystem using OSM Web Wizard. You open up the tool, select the exact geographic area you want to study, and it imports the real-world map data.
+     To construct a high-fidelity digital twin capable of replicating real-world urban dynamics, the engineering workflow demands a rigorous, multi-stage pipeline that bridges raw geographic data with microscopic simulation. The process begins right inside the SUMO ecosystem utilizing **OSM Web Wizard**, an intuitive tool that allows you to isolate and carve out the exact geographic boundaries of your study area—such as the high-traffic corridor surrounding Glades Road and Airport Road in Boca Raton. With a few parameters, the wizard downloads real-world map attributes directly from OpenStreetMap, translating physical roads, intersections, and speed limits into an initial digital grid.
 
-From there, you export that network straight into Netedit, which gives you a full suite of editing tools to clean up lanes, adjust traffic lights, and fine-tune the layout. Once the network is dialed in, you load it into SUMO and run the simulation.
+However, raw map data pulled directly from open-source repositories is rarely pristine; it frequently contains topological anomalies, missing signal phases, or imperfect lane alignments. To resolve this, the network is exported straight into **Netedit**, SUMO’s dedicated graphical network editor. Within Netedit, engineers are handed a comprehensive suite of tools to meticulously clean up the layout. You adjust lane counts, establish turning restrictions, fix connecting nodes, and explicitly program traffic light logic and cycle timings to reflect actual field conditions. This phase is crucial, as the accuracy of the virtual environment depends entirely on the geometric precision of the underlying network.
 
-As the simulation finishes running, it dumps a massive amount of raw operational data into XML files. Looking at those raw files can be pretty overwhelming and dizzying—which is exactly why we write custom Python code to read through the files, strip away the noise, and instantly extract the exact vehicle counts and data we need.
+Once the road network is fully dialed in and verified, the environment is loaded into the **SUMO** (Simulation of Urban MObility) microscopic simulation engine. Unlike macroscopic models that treat traffic as a generalized fluid, SUMO tracks every individual vehicle as an autonomous agent governed by car-following models, driver behavior parameters, and local traffic signals. As the simulation runs through its temporal steps, vehicles enter via designated edge routers, navigate intersections, and interact dynamically with one another.
 
-
+When the simulation run concludes, it dumps a massive volume of raw operational data into complex, highly structured XML files. These files contain exhaustive, second-by-second records of network performance, detector states, and vehicle trajectories. Reviewing thousands of lines of raw XML telemetry manually is entirely unfeasible, presenting a formidable data processing bottleneck. To conquer this, custom Python automation scripts are deployed as an essential parser. These scripts systematically iterate through the massive output files, strip away formatting noise, parse the structural hierarchies, and instantly extract exact vehicle counts, cumulative delays, and throughput metrics—transforming an overwhelming wall of raw data into clean, actionable insights ready for statistical validation.
 
 
       </p>
@@ -301,24 +349,6 @@ As the simulation finishes running, it dumps a massive amount of raw operational
 
    
   
-
-
-
-       <figure class="full" style="text-align:center;">
-        <img src="ty1.png" alt="Digital twin model of the intersection"
-        style="max-width:70%; display:inline-block;" />
-      </figure>
-
-
-      <p>This is our calibrated digital twin model</p>
-
-      <figure class="full" style="text-align:center;">
-        <img src="ty2.png" alt="Digital twin model of the intersection"
-        style="max-width:70%; display:inline-block;" />
-      </figure>
-
-      <p>On the westbound approach of Glades Road there are four lanes: one turning north toward the airport, two continuing straight, and one turning south. The edited network explores a simple idea, by diverting the vehicles that would otherwise turn left, we can reduce the number of cars held up on the main road and ease congestion through the intersection. 16% deacrease in congestion. Deacrease of 380 vehicles per hour</p>
-
 
 
 
